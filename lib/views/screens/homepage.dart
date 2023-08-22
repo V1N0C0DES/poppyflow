@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:poppyflow/constants/kConstants.dart';
-import 'package:poppyflow/views/screens/theflowpage.dart';
 
 import 'favourites.dart';
 import 'poses.dart';
@@ -71,12 +70,12 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: pflowBlueGrey,
         onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => TheFlowPage(),
-            ),
-          );
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(
+          //     builder: (context) => TheFlowPage(),
+          //   ),
+          // );
         },
         child: FractionallySizedBox(
           widthFactor:

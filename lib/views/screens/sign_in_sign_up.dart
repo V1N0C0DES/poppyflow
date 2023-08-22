@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../constants/kConstants.dart';
-import '../../widgets/socialmediabuttons.dart';
 import 'forgot_password.dart';
 import 'homepage.dart';
 
@@ -391,25 +388,6 @@ class SignInForm extends StatelessWidget {
             thickness: 1,
             indent: 150,
             endIndent: 150,
-          ),
-          Flexible(
-            child: ListView(
-              children: [
-                CustomWidgets.socialButtonRect('Sign in with Facebook',
-                    facebookColor, FontAwesomeIcons.facebookF, onTap: () {
-                  Fluttertoast.showToast(msg: 'I am facebook');
-                }),
-                CustomWidgets.socialButtonRect(
-                    'Sign in with Google', googleColor, FontAwesomeIcons.google,
-                    onTap: () {
-                  Fluttertoast.showToast(msg: 'I am google');
-                }),
-                CustomWidgets.socialButtonRect('Sign in with LinkedIn',
-                    linkedinColor, FontAwesomeIcons.linkedinIn, onTap: () {
-                  Fluttertoast.showToast(msg: 'I am linkedin');
-                }),
-              ],
-            ),
           ),
         ],
       ),

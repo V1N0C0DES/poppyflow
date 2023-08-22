@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
         ),
         title: _currentIndex == 0
             ? const Text(
-                'Homes',
+                'Home',
               )
             : _currentIndex == 1
                 ? const Text('Yoga Poses')
